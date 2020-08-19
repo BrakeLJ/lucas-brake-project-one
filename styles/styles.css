@@ -42,8 +42,8 @@ span
  {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
-
 
 html {
      font-size: 62.5%;
@@ -59,7 +59,7 @@ body {
 
 .wrapper {
      margin: 0 auto;
-     max-width: 1250px;
+     max-width: 1350px;
      width: 85%;
 }
 
@@ -79,13 +79,6 @@ button,
 input[type="submit"] {
     font-family: 'Offside', cursive; 
     font-size: 2rem;
-
-    color: #fff;
-    background: #116500;
-}
-
-.logo {
-    line-height: 2rem;
 }
 
 button,
@@ -119,7 +112,48 @@ Header Styles
 =========================================*/
 
 header {
-    background-image: url(../assets/header-image.jpg);
+    height: 100vh;
+    background: url(../assets/header-image.jpg) no-repeat fixed center/cover;
+}
+
+.logo {
+    line-height: 2rem;
+    padding-top: 20px;
+    color: #fff;
+    float: left;
+}
+
+.span-break {
+    display: block;
+}
+
+.header-nav {
+    float: right;
+}
+
+.header-nav li {
+    padding: 20px 0 0 40px;
+    float: left;
+}
+
+h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 6.88rem;
+    font-weight: 400;
+
+    letter-spacing: .08rem;
+    line-height: 6.37rem;
+    margin-top: 6rem;
+
+    color: #fff;
+
+    clear: both;
+    float: left;
+}
+
+.socials {
+    margin: 6rem 5rem 0 0;
+    float: right;
 }
 
 
