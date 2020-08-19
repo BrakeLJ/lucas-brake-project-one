@@ -18,7 +18,7 @@ Charcoal #2c2d2c
 Deep Green #116500
 White #fff
 Pine Two #213c28
-Duck Egg Blue #d6f1e4 
+Duck Egg Blue #d6f1e4
 */
 
 /* Fonts
@@ -156,10 +156,51 @@ h1 {
     float: right;
 }
 
-
 /*=========================================
 Main Styles
 =========================================*/
+
+/*===============
+Gallery Section
+===============*/
+
+main {
+    background: #d6f1e4;
+}
+
+.gallery {
+    margin-bottom: 75px;
+}
+
+h2 {
+
+    font-size: 4.2rem;
+    color: #116500;
+    font-family: 'Offside', cursive; 
+}
+
+.gallery h2 {
+    text-align: center;
+    padding: 75px 0;
+}
+/* REALLY HAVE TO WORK ON THE WIDTH IN REGARDS TO CENTERING  */
+.gallery img {
+    width: calc((100% / 3) - 40px);
+    float: left;
+}
+
+.center-img {
+    margin: 0px 50px;
+}
+
+/*===============
+About Section
+===============*/
+
+/*===============
+Blog Section
+===============*/
+
 
 
 
