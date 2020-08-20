@@ -77,59 +77,71 @@
 
     <!-- Main Content  -->
     <main role="main">
-        <div class="wrapper">
 
-            <!-- Gallery Section  -->
-            <section class="gallery">
+        <!-- Gallery Section  -->
+        
+        <div class="wrapper">
+            <section class="gallery clearfix">
                 <h2>Our New Friends</h2>
                 <img src="./assets/gallery-image-1@2x.jpg" alt="a panda eating a piece of bamboo">
                 <img class="center-img" src="./assets/gallery-image-2@2x.jpg" alt="a close up of a panda looking to the right of the image">
                 <img src="./assets/gallery-image-3@2x.jpg" alt="two pandas up close and personal">
             </section>
-
+    
             <!-- About Section  --> 
-            <!-- THIS MAY BE AN H3 THINK ABOUT IT MAAAAN  -->
-            <section id="about">
+            <section id="about" class="about clearfix">
                 <img src="./assets/small-box@2x.jpg" alt="a panda sitting on a log scratching it's ear">
-                <h3>More about our park</h3>
+                <h2 class="paragraph-headings">More about our park</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, veritatis? Provident, ducimus possimus numquam dolorem est repellendus veritatis deserunt? Voluptatibus facilis deserunt, perspiciatis, ea dolore quis minus illo reprehenderit ut maxime odio dolores sequi quae dolorum vero. Quasi, obcaecati sit!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, veritatis? Provident, ducimus possimus numquam dolorem est repellendus veritatis deserunt? Voluptatibus facilis deserunt, perspiciatis, ea dolore quis minus illo reprehenderit ut maxime odio dolores sequi quae dolorum vero. Quasi, obcaecati sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis voluptatibus eaque dolores, a dignissimos consequatur eius minima temporibus harum mollitia voluptatem impedit blanditiis eveniet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quisquam!
                 </p>
-                <!-- GET FUCKING WACKY WITH THIS BUTTON  -->
                 <button>read more</button>
             </section>
+        </div>
 
-            <!-- Blog Section  -->
-            <section id="blog" class="new-panda-intro">
-                <h2>Bobby and Bella</h2>
+        <!-- Blog Section  -->
+        <section id="blog" class="blog clearfix">
+            <div class="blog-box">
+                <h2 class="paragraph-headings">Bobby and Bella</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt incidunt enim in accusamus at omnis! Ducimus, dolore tempore dolorum laudantium odio at, cum id doloribus optio ipsa obcaecati! Voluptatibus?
                 </p>
                 <button class="white-button" >Read More</button>
-                <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.jpg" alt="two pandas laying on logs together">
+            </div>
+            <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.jpg" alt="two pandas laying on logs together">
 
-                <!-- CHECK THIS IMAGE, THERE ARE TWO COPIES IN ASSETS FOLDER  -->
-                <img src="./assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.jpg" alt="a panda holding a small shoot of bamboo in it's mouth">
-                <h2>Look at Marco now</h2>
+            <!-- CHECK THIS IMAGE, THERE ARE TWO COPIES IN ASSETS FOLDER  -->
+            <img src="./assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.jpg" alt="a panda holding a small shoot of bamboo in it's mouth">
+            <div class="blog-box">
+                <h2 class="paragraph-headings">Look at Marco now</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt incidunt enim in accusamus at omnis! Ducimus,
                     dolore tempore dolorum laudantium odio at, cum id doloribus optio ipsa obcaecati! Voluptatibus?
                 </p>
                 <button class="white-button">Read More</button>
-            </section>
+            </div>
+        </section>
 
-            <!-- CHANGE THIS COMMENT NAME  -->
-            <!-- Icon Section  -->
-            <!-- SPRUCE UP THESE LINKS TOO  -->
-            <section>
-                <a href="#"><i class="fas fa-gift"></i></a>
-                <span>Donations</span>
-                <a href="#">Jobs<i class="fas fa-briefcase"></i></a>
-                <span></span>
-                <a href="#">Events<i class="fas fa-calendar-check"></i></a>
-                <span></span>
-            </section>
-        </div>
+        <!-- CHANGE THIS COMMENT NAME  -->
+        <!-- Icon Section  -->
+        <!-- SPRUCE UP THESE LINKS TOO  -->
+        <section class="icon-container clearfix">
+            <div class="wrapper">
+                <div class="icons">
+                    <a href="#"><i class="fas fa-gift"></i></a>
+                    <span>Donations</span>
+                </div>
+                <div class="icons">
+                    <a href="#"><i class="fas fa-briefcase"></i></a>
+                    <span>Jobs</span>
+                </div>
+                <div class="icons">
+                    <a href="#"><i class="fas fa-calendar-check"></i></a>
+                    <span>Events</span>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <!-- Footer Content  -->
@@ -171,11 +183,10 @@
                     </li>
                 </ul>
             </nav>
-
-            <!-- Created @ Juno  -->
-            <div class="juno-footer">
-                <span>Created @ <a href="https://junocollege.com/">Juno College</a></span>
-            </div>
+        </div>
+        <!-- Created @ Juno  -->
+        <div class="juno-footer">
+            <span>Created @ <a href="https://junocollege.com/">Juno College</a></span>
         </div>
     </footer>
 </body>

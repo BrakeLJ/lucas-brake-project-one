@@ -59,8 +59,8 @@ body {
 
 .wrapper {
      margin: 0 auto;
-     max-width: 1350px;
-     width: 85%;
+     max-width: 1400px;
+     width: 90%;
 }
 
 img {
@@ -197,10 +197,75 @@ h2 {
 About Section
 ===============*/
 
+.about {
+    margin-bottom: 75px;
+}
+
+.about img {
+    width: 20%;
+    margin-right: 50px;
+    float: left;
+}
+
+.paragraph-headings {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px
+}
+
+.about button {
+    background: #116500;
+    color: white;
+}
+
 /*===============
 Blog Section
 ===============*/
 
+.blog {
+    background: #213c28;
+}
+
+.blog-box {
+    width: 50%;
+    float: left;
+}
+
+.blog img {
+    width: 50%;
+    float: left;
+}
+
+.blog h2 {
+    color: #fff;
+}
+
+.blog p {
+    color: #fff;
+}
+
+/*===============
+Icons Section
+===============*/
+
+.icons {
+    width: calc(100% / 3);
+    float: left;
+    text-align: center;
+    padding: 75px;
+}
+
+.icons i {
+    font-size: 4rem;
+    color: #2c2d2c;
+}
+
+.icons span {
+    display: block;
+    color: #116500;
+}
 
 
 
@@ -208,6 +273,15 @@ Blog Section
 Footer Styles
 =========================================*/
 
+footer {
+    background: #213c28;
+}
+
+.juno-footer {
+    background: #2c2d2c;
+    text-align: center;
+    color: #fff;
+}
 
 
 /*=========================================
