@@ -100,31 +100,60 @@
         </div>
 
         <!-- Blog Section  -->
-        <section id="blog" class="blog clearfix">
-            <div class="blog-box">
-                <h2 class="paragraph-headings">Bobby and Bella</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt incidunt enim in accusamus at omnis! Ducimus, dolore tempore dolorum laudantium odio at, cum id doloribus optio ipsa obcaecati! Voluptatibus?
-                </p>
-                <button class="white-button" >Read More</button>
-            </div>
-            <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.jpg" alt="two pandas laying on logs together">
+        <!-- <section id="blog" class="blog clearfix">
+            <div class="blog-box clearfix">
+                <div class="blog-wrap">
+                    <div class="height-wrap">
+                        <h2 class="paragraph-headings">Bobby and Bella</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aperiam alias exercitationem iusto velit sed illum veritatis qui modi quibusdam totam beatae maiores, accusamus fuga ut, commodi, esse quidem odit aliquid a delectus consequatur. Quisquam totam accusamus aliquid eligendi quae.
+                        </p>
+                        <button class="white-button">Read More</button>
+                    </div>
+                    
+                </div>
+                <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.jpg" alt="two pandas laying on logs together">
+            </div> -->
 
-            <!-- CHECK THIS IMAGE, THERE ARE TWO COPIES IN ASSETS FOLDER  -->
-            <img src="./assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.jpg" alt="a panda holding a small shoot of bamboo in it's mouth">
-            <div class="blog-box">
-                <h2 class="paragraph-headings">Look at Marco now</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt incidunt enim in accusamus at omnis! Ducimus,
-                    dolore tempore dolorum laudantium odio at, cum id doloribus optio ipsa obcaecati! Voluptatibus?
-                </p>
-                <button class="white-button">Read More</button>
+
+        <section id="blog" class="blog">
+            <div class="blog-container clearfix">
+                <div class="text-box clearfix">
+                    <div class="floater"></div>
+                    <div class="blog-content">
+                        <h2 class="paragraph-headings">Bobby and Bella</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aperiam alias exercitationem iusto velit sed illum
+                            veritatis qui modi quibusdam totam beatae maiores, accusamus fuga ut, commodi, esse quidem odit aliquid a delectus
+                            consequatur. Quisquam totam accusamus aliquid eligendi quae.
+                        </p>
+                        <button class="white-button">Read More</button>
+                    </div>
+                </div>
+                <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.jpg" alt="two pandas laying on logs together">
+            </div>
+
+            <div class="blog-container clearfix">
+                <img src="./assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.jpg"
+                    alt="a panda holding a small shoot of bamboo in it's mouth">
+                <div class="text-box clearfix">
+                    <div class="floater"></div>
+                    <div class="blog-content">
+                        <h2 class="paragraph-headings">Look at Marco now</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aperiam alias exercitationem iusto velit
+                            sed illum
+                            veritatis qui modi quibusdam totam beatae maiores, accusamus fuga ut, commodi, esse quidem odit aliquid
+                            a delectus
+                            consequatur. Quisquam totam accusamus aliquid eligendi quae.
+                        </p>
+                        <button class="white-button">Read More</button>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- CHANGE THIS COMMENT NAME  -->
         <!-- Icon Section  -->
-        <!-- SPRUCE UP THESE LINKS TOO  -->
         <section class="icon-container clearfix">
             <div class="wrapper">
                 <div class="icons">
@@ -149,40 +178,43 @@
         <div class="wrapper">
 
             <!-- Newsletter Form  -->
-            <form role="form" action="#">
-                <h2>Stay updated</h2>
-                <span>Subscribe to our newsletter to stay updatted.</span>
-                <label class="sr-only" for="email">please enter your email address</label>
-                <input type="email" name="email" id="email" required placeholder="email address">
-                <!-- UPPERCASE THAT BUTTON -->
-                <input type="submit" value="subscribe">
-            </form>
-
-            <!-- Panda Contact Info  -->
-            <div class="contact-info">
-                <h2>Contact</h2>
-                <span>info@email.com 123-456-7890</span>
-                <span>123 some road, Toronto, ON</span>
-                <span>A5A 5A5, Canada</span>
+            <div class="footer-content-container clearfix">
+                <form role="form" action="#">
+                    <h2>Stay updated</h2>
+                    <span>Subscribe to our newsletter to stay updatted.</span>
+                    <label class="sr-only" for="email">please enter your email address</label>
+                    <div class="input">
+                        <input type="email" name="email" id="email" required placeholder="email address">
+                        <input type="submit" value="subscribe">
+                    </div>
+                </form>
+    
+                <!-- Panda Contact Info  -->
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <span>info@email.com 123-456-7890</span>
+                    <span class="span-break">123 some road, Toronto, ON</span>
+                    <span class="span-break">A5A 5A5, Canada</span>
+                </div>
+    
+                <!-- Footer Navigation  -->
+                <nav role="navigation" class="footer-nav">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
-            <!-- Footer Navigation  -->
-            <nav role="navigation" class="footer-nav">
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#blog">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
         <!-- Created @ Juno  -->
         <div class="juno-footer">

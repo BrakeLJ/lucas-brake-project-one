@@ -32,19 +32,13 @@ General Styles
 =========================================*/
 
 /* Style Stripping  */
-body,
-p,
-h1,
-h2,
-h3,
-ul,
-span
- {
+body,p,h1,h2,h3,ul,span {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+/* Setting Root Font Size  */
 html {
      font-size: 62.5%;
 }
@@ -81,6 +75,7 @@ input[type="submit"] {
     font-size: 2rem;
 }
 
+/* Main Button Styling  */
 button,
 input[type="submit"] {
     line-height: 2.9rem;
@@ -94,10 +89,6 @@ input[type="submit"] {
 .white-button {
     background: #fff;
     color: #116500;
-}
-
-input[type="submit"] {
-    background: #2c2d2c;
 }
 
 nav {
@@ -228,9 +219,27 @@ Blog Section
     background: #213c28;
 }
 
-.blog-box {
+
+
+.text-box {
     width: 50%;
+    height: 100%;
+    float:left;
+    
+}
+/* This needs to be adjusted at like 1200px Also just fix it and make it padding maaan*/
+.floater {
+    height: 20rem;
+    top: 100%;
+    width: 100%;
     float: left;
+    margin-bottom: -5rem;
+   
+}
+
+.blog-content {
+    width: 75%;
+    margin: 0 auto;
 }
 
 .blog img {
@@ -267,14 +276,49 @@ Icons Section
     color: #116500;
 }
 
-
-
 /*=========================================
 Footer Styles
 =========================================*/
 
 footer {
     background: #213c28;
+}
+
+.footer-content-container{
+    padding: 70px 0;
+}
+
+form, h2, span{
+    color: #fff;
+}
+
+form {
+    width: 60%;
+    float: left;
+}
+
+footer h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.input {
+    display: block;;
+}
+
+input[type="submit"] {
+    background: #2c2d2c;
+    color: #fff;
+}
+
+.contact-info {
+    width: 20%;
+    float: left;
+}
+
+.footer-nav {
+    width: 20%;
+    float: left;
 }
 
 .juno-footer {
@@ -295,3 +339,19 @@ Header nav goes into hamburger, Also see if you can add socials in there
 Bottom Nav Stays the Same 
 */
 
+/* .blog-box {
+    
+    
+}
+
+.blog-wrap {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+.height-wrap {
+    clear: both;
+    margin: 0 auto;
+    width: 60%;
+} */
