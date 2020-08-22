@@ -133,6 +133,7 @@ input[type="submit"]:active {
 input[type="submit"] {
     background: #2c2d2c;
     color: #fff;
+    margin-left: -5px;
     transition: all 1s;
 }
 
@@ -184,7 +185,7 @@ header {
 /* Link Hover/Focus States  */
 .header-nav a:hover,
 .header-nav a:focus {
-    color: #b0f5d3;
+    color: #2cf803;
 }
 
 /* Main Heading Styles  */
@@ -248,9 +249,16 @@ h2 {
     padding: 75px 0;
 }
 
+/* Tried setting the li with overflow: hidden, but it knocked everythingout of float */
+/* Image display and Hover Transition  */
 .gallery img {
     width: calc((100% / 3) - 40px);
     float: left;
+    transition: all .5s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
 }
 
 .center-img {
@@ -292,8 +300,6 @@ Blog Section
     background: #213c28;
 }
 
-
-
 .text-box {
     width: 50%;
     height: 100%;
@@ -303,11 +309,9 @@ Blog Section
 /* This needs to be adjusted at like 1200px Also just fix it and make it padding maaan*/
 .floater {
     height: 20rem;
-    top: 100%;
     width: 100%;
     float: left;
     margin-bottom: -5rem;
-   
 }
 
 .blog-content {
@@ -363,6 +367,7 @@ footer {
     background: #213c28;
 }
 
+/* Sets Padding around Footer Content  */
 .footer-content-container{
     padding: 70px 0;
 }
@@ -371,6 +376,7 @@ footer h2, span{
     color: #fff;
 }
 
+/* Form Layout  */
 form {
     width: 55%;
     float: left;
@@ -388,18 +394,27 @@ footer h2 {
 
 input[type="email"] {
     width: 60%;
-    padding: 7px;
+    padding: 8px;
 }
 
-
+/* Contact Info Layout  */
 .contact-info {
     width: 25%;
     float: left;
 }
 
+/* Footer Navigation Layout  */
 .footer-nav {
     width: 20%;
     float: left;
+}
+.footer-nav li {
+    transition: all .2s;
+}
+
+.footer-nav li:hover,
+.footer-nav li:focus {
+    transform: translateX(5px);
 }
 
 .footer-nav a {
@@ -417,6 +432,58 @@ input[type="email"] {
 /*=========================================
 Media Queries
 =========================================*/
+
+@media (max-width: 1212px) {
+
+    .floater {
+        height: 10rem;
+    }
+
+    .blog h2 {
+        font-size: 3.5rem;
+    }
+
+    .blog p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 955px) {
+    
+    /* .text-box {
+    width: 50%;
+    height: 100%;
+    float:left;
+    
+}
+/* This needs to be adjusted at like 1200px Also just fix it and make it padding maaan*/
+.floater {
+    height: 20rem;
+    width: 100%;
+    float: left;
+    margin-bottom: -5rem;
+}
+
+.blog-content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.blog img {
+    width: 50%;
+    float: left;
+} */
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+
 
 /* Notes/ToDo  */
 
