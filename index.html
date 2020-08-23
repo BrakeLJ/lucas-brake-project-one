@@ -8,6 +8,7 @@
     <!-- Font Awesome  -->
     <script src="https://kit.fontawesome.com/921924a5a0.js" crossorigin="anonymous"></script>
     <!-- Font Awesome Icons
+    <i class="fas fa-bars"></i>
     <i class="fab fa-instagram"></i>
     <i class="fab fa-facebook-f"></i>
     <i class="fab fa-snapchat-ghost"></i>
@@ -42,6 +43,9 @@
                     </li>
                     <li>
                         <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-bars"></i></span>
                     </li>
                 </ul>
             </nav>
@@ -109,24 +113,9 @@
         </div>
 
         <!-- Blog Section  -->
-        <!-- <section id="blog" class="blog clearfix">
-            <div class="blog-box clearfix">
-                <div class="blog-wrap">
-                    <div class="height-wrap">
-                        <h2 class="paragraph-headings">Bobby and Bella</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aperiam alias exercitationem iusto velit sed illum veritatis qui modi quibusdam totam beatae maiores, accusamus fuga ut, commodi, esse quidem odit aliquid a delectus consequatur. Quisquam totam accusamus aliquid eligendi quae.
-                        </p>
-                        <button class="white-button">Read More</button>
-                    </div>
-                    
-                </div>
-                <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.jpg" alt="two pandas laying on logs together">
-            </div> -->
-
-        <!-- Blog Section  -->
         <section id="blog" class="blog">
             <div class="blog-container clearfix">
+                <img class="img-1" src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.jpg" alt="two pandas laying on logs together">
                 <div class="text-box clearfix">
                     <div class="floater"></div>
                     <div class="blog-content">
@@ -139,11 +128,11 @@
                         <a href="#" class="read-more read-more-light">read more</a>
                     </div>
                 </div>
-                <img src="./assets/pascal-muller-4-eaj-iu-uxg-aq-unsplash@2x.jpg" alt="two pandas laying on logs together">
             </div>
 
             <div class="blog-container clearfix">
-                <img src="./assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.jpg"
+                <!-- Image Comes First So That In Responsive It Appears Above Text  -->
+                <img class="img-2" img-2 src="./assets/debbie-molle-6-dsid-8-ey-9-u-unsplash-1@2x.jpg"
                     alt="a panda holding a small shoot of bamboo in it's mouth">
                 <div class="text-box clearfix">
                     <div class="floater"></div>
@@ -165,6 +154,7 @@
         <!-- Icon Section  -->
         <section class="icon-container clearfix">
             <div class="wrapper">
+                <!-- In a Div to Have Icon sit on Span. Div is Floated  -->
                 <div class="icons">
                     <a href="#"><i class="fas fa-gift"></i></a>
                     <span>Donations</span>

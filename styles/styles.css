@@ -170,6 +170,12 @@ header {
     float: right;
 }
 
+/* Hide the Hamburger, Style the Hamburger  */
+.header-nav li:last-child {
+    display: none;
+    font-size: 3.5rem;
+}
+
 /* Floats Individual Links Beside Each Other */
 .header-nav li {
     float: left;
@@ -203,7 +209,6 @@ h1 {
     clear: both;
     float: left;
 }
-
 /* Float Socials Right  */
 .socials {
     margin: 6rem 5rem 0 0;
@@ -269,27 +274,25 @@ h2 {
 About Section
 ===============*/
 
+/* Spacing Between Sections  */
 .about {
     margin-bottom: 75px;
 }
 
+/* Small Image Floated Left  */
 .about img {
     width: 20%;
     margin-right: 50px;
     float: left;
 }
 
+/* Styling for Multiple Headings  */
 .paragraph-headings {
     margin-bottom: 15px;
 }
 
 p {
     margin-bottom: 15px
-}
-
-.about button {
-    background: #116500;
-    color: white;
 }
 
 /*===============
@@ -300,13 +303,24 @@ Blog Section
     background: #213c28;
 }
 
+/* Set Widths for Both Images  */
+.blog img {
+    width: 50%;
+}
+
+/* Top Image Floated Right  */
+.img-1 {
+    float: right;
+}
+
 .text-box {
     width: 50%;
     height: 100%;
     float:left;
-    
 }
-/* This needs to be adjusted at like 1200px Also just fix it and make it padding maaan*/
+
+/* Made Empty Div in Attempt To Have More Responsive Approach Than Padding. 
+Empty Div Did Not Accept % Height. Might Have just Made a Long Form Padding with This */
 .floater {
     height: 20rem;
     width: 100%;
@@ -314,14 +328,10 @@ Blog Section
     margin-bottom: -5rem;
 }
 
+/* Blog Content Specific Wrapper to Center Horizontally  */
 .blog-content {
     width: 75%;
     margin: 0 auto;
-}
-
-.blog img {
-    width: 50%;
-    float: left;
 }
 
 .blog h2 {
@@ -332,10 +342,16 @@ Blog Section
     color: #fff;
 }
 
+/* Lower Image Floated Left  */
+.img-2 {
+    float: left;
+}
+
 /*===============
 Icons Section
 ===============*/
 
+/* Container with Icon/Span Floated Left  */
 .icons {
     width: calc(100% / 3);
     float: left;
@@ -343,12 +359,14 @@ Icons Section
     padding: 75px;
 }
 
+/* Font Awesome Icon Styles  */
 .icons i {
     font-size: 4rem;
     color: #2c2d2c;
     transition: all .5s;
 }
 
+/* Hover/Focus states on Icons  */
 .icons i:hover,
 .icons i:focus {
     transform: scale(1.25, 1.25);
@@ -412,6 +430,7 @@ input[type="email"] {
     transition: all .2s;
 }
 
+/* Hover/Focus States on Footer Nav  */
 .footer-nav li:hover,
 .footer-nav li:focus {
     transform: translateX(5px);
@@ -421,13 +440,13 @@ input[type="email"] {
     font-weight: 400;
 }
 
+/* Created @ Juno Footer  */
 .juno-footer {
     background: #2c2d2c;
     text-align: center;
     color: #fff;
     padding: 5px 0;
 }
-
 
 /*=========================================
 Media Queries
@@ -449,37 +468,96 @@ Media Queries
 }
 
 @media (max-width: 955px) {
+
+    header {
+        background: url(../assets/header-image.jpg) no-repeat scroll left/cover;
+        height: 50vh;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        width: 350px;
+    }
     
-    /* .text-box {
-    width: 50%;
-    height: 100%;
-    float:left;
+
+    .blog-content {
+        padding-bottom: 30px;
+    }
     
-}
-/* This needs to be adjusted at like 1200px Also just fix it and make it padding maaan*/
-.floater {
-    height: 20rem;
-    width: 100%;
-    float: left;
-    margin-bottom: -5rem;
-}
+    .blog img {
+        width: 100%; 
+        float: none;
+    }
 
-.blog-content {
-    width: 75%;
-    margin: 0 auto;
-}
+    .text-box {
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
 
-.blog img {
-    width: 50%;
-    float: left;
-} */
-}
+    .blog h2, {
+        text-align: center;
+    }
 
-@media (max-width: 1200px) {
-
+    .read-more {
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+    }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 769px) {
+
+      header {
+        background-position-x: -85px;
+        height: 50vh;
+    }
+
+    h1 {
+        /* font-size: 3.5rem; */
+        width: 300px;
+        line-height: 4.5rem;
+    }
+
+    .socials a {
+        color: #116500;
+    }
+
+    .gallery 
+
+    .about img {
+        display: none;
+    }
+}
+
+@media (max-width: 565px) {
+
+    header {
+        background-position: top left;
+        height: 35vh;
+    }
+
+    /* Hides All List Items Except Last  */
+    .header-nav li:not(:last-child) {
+        display: none;
+    }
+
+    .header-nav li:last-child {
+        display: inline;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin-top: 30px;
+        width: 210px
+    }
+
+    
 
 }
 
