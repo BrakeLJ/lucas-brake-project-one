@@ -1,11 +1,14 @@
+/* Normalize  */
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 
+/* Float Clearfix  */
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 
 html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 *, *:before, *:after {box-sizing: inherit}
 
+/* Screen Reader Only  */
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 /*=========================================
@@ -55,7 +58,7 @@ body {
 /* Main Wrap for Content  */
 .wrapper {
      margin: 0 auto;
-     max-width: 1400px;
+     max-width: 1300px;
      width: 90%;
 }
 
@@ -113,7 +116,7 @@ input[type="submit"]:active {
 
 /* Read More Dark Hover/Focus States  */
 .read-more-dark:hover,
-.read-more-dark:focus {
+.read-more-dark a:focus {
     background: #0c4700;
 }
 
@@ -125,8 +128,9 @@ input[type="submit"]:active {
 
 /* Read More Light Hover/Focus States  */
 .read-more-light:hover,
-.read-more-light:focus {
-    background: #d6f1e4;
+.read-more-light a:focus {
+    background: #6c7772;
+    color: #fff;
 }
 
 /* Form Submit Button  */
@@ -138,7 +142,8 @@ input[type="submit"] {
 }
 
 /* Form Submit Hover/Focus State  */
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="submit"] a:hover {
     background: #171817;
 }
 
@@ -209,6 +214,22 @@ h1 {
     clear: both;
     float: left;
 }
+
+/* Skip Link for A11Y  */
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: #d6f1e4;
+  color: #2c2d2c;
+  border: 2px solid #213c28
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 /* Float Socials Right  */
 .socials {
     margin: 6rem 5rem 0 0;
@@ -221,10 +242,11 @@ h1 {
 
 /* Social Media Hover/Focus States  */
 .socials i:hover,
-.socials i:focus {
+.socials a:focus {
     transform: scale(1.25, 1.25);
     color: #2cf803;
 }
+
 
 /*=========================================
 Main Styles
@@ -354,6 +376,7 @@ Icons Section
 /* Container with Icon/Span Floated Left  */
 .icons {
     width: calc(100% / 3);
+    font-family: 'Offside', cursive; 
     float: left;
     text-align: center;
     padding: 75px;
@@ -367,9 +390,12 @@ Icons Section
 }
 
 /* Hover/Focus states on Icons  */
-.icons i:hover,
-.icons i:focus {
+.icons i:hover {
     transform: scale(1.25, 1.25);
+}
+
+.icons a:focus {
+    border: 2px solid #116500;
 }
 
 .icons span {
@@ -431,9 +457,12 @@ input[type="email"] {
 }
 
 /* Hover/Focus States on Footer Nav  */
-.footer-nav li:hover,
-.footer-nav li:focus {
+.footer-nav li:hover {
     transform: translateX(5px);
+}
+
+.footer-nav li a:focus {
+    color: #116500;
 }
 
 .footer-nav a {
@@ -496,7 +525,7 @@ Media Queries
         float: none;
     }
 
-    .blog h2, {
+    .blog h2 {
         text-align: center;
     }
 
@@ -515,7 +544,6 @@ Media Queries
     }
 
     h1 {
-        /* font-size: 3.5rem; */
         width: 300px;
         line-height: 4.5rem;
     }
@@ -524,11 +552,66 @@ Media Queries
         color: #116500;
     }
 
-    .gallery 
+    .gallery img {
+        width: calc(50% - 20px);
+    }
+
+    .center-img {
+        margin: 0 0 0 40px;
+    }
+
+    .gallery-large img {
+        width: 100%;
+        padding-top: 50px;
+        float: none;
+    }
+
+    .gallery img:hover {
+        transform: none;
+    }
 
     .about img {
         display: none;
     }
+
+    .read-more-dark {
+        padding: 15px 15px;
+    }
+
+    form {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    form h2 {
+        text-align: center;
+    }
+
+    form span {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .input input[type="submit"] {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .contact-info {
+        width: 50%;
+    }
+
+    .footer-nav {
+        float: right;
+        text-align: right;
+    }
+
 }
 
 @media (max-width: 565px) {
@@ -557,8 +640,36 @@ Media Queries
         width: 210px
     }
 
-    
+    .icons {
+    width: 100%;
+    float: none;
+    padding: 20px;
+    }
 
+}
+
+@media (max-width: 420px) {
+
+    .wrapper {
+        width: 95%;
+    }
+
+    header {
+        background-position-x: -140px;
+    }
+
+    .center-img {
+        margin: 0 0 0 30px;
+    }
+
+    .blog-content {
+        width: 85%;
+    }
+    
+    h2,
+    .blog h2 {
+        font-size: 3rem
+    }
 }
 
 
